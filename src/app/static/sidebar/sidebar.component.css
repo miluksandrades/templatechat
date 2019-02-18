@@ -1,0 +1,96 @@
+.fas{
+    color: #6b6b6b
+}
+
+/* .fa-inbox */
+.col-md-12 .fa-inbox{
+    transition: color 0.2s ease-in-out;
+}
+.active > .fa-inbox{
+    color: #4fe957;
+}
+.col-md-12:hover .fa-inbox{
+    color: #4fe957;
+}
+/* .fa-comment-alt */
+.col-md-12 .fa-comment-alt{
+    transition: color 0.2s ease-in-out;
+}
+.active > .fa-comment-alt{
+    color: #1c8321
+}
+.col-md-12:hover .fa-comment-alt{
+    color: #1c8321;
+}
+
+/* .fa-book */
+.col-md-12 .fa-book{
+    transition: color 0.2s ease-in-out
+}
+.active > .fa-book{
+    color: #5c1c91
+}
+.col-md-12:hover .fa-book{
+    color: #5c1c91
+}
+
+/* .fa-phone */
+.col-md-12 .fa-phone{
+    transition: color 0.2s ease-in-out
+}
+.active > .fa-phone{
+    color: #1c8321
+}
+.col-md-12:hover .fa-phone{
+    color: #1c8321
+}
+
+/* .fa-users */
+.col-md-12 .fa-users{
+    transition: color 0.2s ease-in-out
+}
+.active > .fa-users{
+    color: #0c95b8
+}
+.col-md-12:hover .fa-users{
+    color: #0c95b8
+}
+
+/* .fa-binoculars */
+.col-md-12 .fa-binoculars{
+    transition: color 0.2s ease-in-out
+}
+.active > .fa-binoculars{
+    color: #36B382
+}
+.col-md-12:hover .fa-binoculars{
+    color: #36B382
+}
+
+/* .fa-crown */
+.col-md-12 .fa-crown{
+    transition: color 0.2s ease-in-out
+}
+.active > .fa-crown{
+    color: #ffc400
+}
+.col-md-12:hover .fa-crown{
+    color: #ffc400
+}
+
+.aside{
+    order: 1;
+    height: 100%;
+    width: 80px;
+    background: #f3f4f5;
+    position: fixed;
+}
+.aside .title-icons{
+    font-size: 11px;
+    color: #f3f4f5;
+    transition: color 0.2s ease-in-out
+}
+
+.aside:hover .title-icons{
+    color: #2e3236
+}

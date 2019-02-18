@@ -1,0 +1,55 @@
+<main role="main" class="ml-sm-auto bg-dark" style="padding-left: 80px; height: 100vh">
+  <div class="container-fluid bg-light">
+    <div class="row list-conversas">
+      <div class="col-md-3">
+        <h5 class="h5 text-center">
+          Conversas
+        </h5>
+        <div class="list-group list-group-flush" *ngFor="let item of users.users" (click)="getIdUser(item.uid)">
+          <a class="list-group-item list-group-item-action " style="cursor: pointer;">
+            <div class="d-flex w-100 justify-content-between">
+              <img src="{{item.photo}}" alt="" srcset="" class="rounded-image" width="32" height="32">
+              <h5 class="h6">{{item.name}}</h5>
+              <small>3 days ago</small>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-9 bg-light">
+        <div class="container-fluid">
+          <br>
+          <div class="container row" *ngFor="let tt of users.users" [hidden]="tt.uid != idSelect">
+            <img src="{{tt.photo}}" class="rounded-image" width="42" height="42" alt="" srcset="">
+            &nbsp;&nbsp;&nbsp;
+            <p class="lead">{{tt.name}}</p>
+          </div>
+          <hr class="bg-seconary col-12">
+          <div class="container bg-light">
+            <div class="card card-body col-md-3" *ngFor="let i of users.chat" [hidden]="i.id != idSelect" style="margin-top: 10px">
+              <p class="card-text">{{i.mensage}}</p>
+            </div>
+            <div class="card card-body bg-secondary text-light col-md-3" *ngFor="let j of person" [hidden]="j.id != idSelect"
+              style="margin-top: 10px">
+              <p class="card-text">{{j.mensage}}</p>
+            </div>
+          </div>
+          <div class="container-fluid bg-light footer">
+            <form>
+              <div class="input-group mb-3" [hidden]="!idSelect">
+                <input type="hidden" name="id">
+                <input type="text" class="form-control" name="mensage" placeholder="Escreva sua mensagem"
+                  aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-outline-secondary" type="button" id="button-addon2">
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>

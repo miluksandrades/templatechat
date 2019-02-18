@@ -1,0 +1,53 @@
+<aside class="aside">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <a routerLink="/inbox" class="nav-link" routerLinkActive="active">
+        <i class="fas fa-inbox"></i>
+        <p class="title-icons">Entrada</p>
+      </a>
+    </div>
+    <div class="col-md-12">
+      <a routerLink="/my" class="nav-link" routerLinkActive="active">
+        <i class="fas fa-comment-alt"></i>
+        <p class="title-icons">Conversas</p>
+      </a>
+    </div>
+    <div class="col-md-12">
+      <a routerLink="/archive" class="nav-link" routerLinkActive="active">
+        <i class="fas fa-book"></i>
+        <p class="title-icons">Arquivos</p> 
+      </a>
+    </div>
+    <div class="col-md-12">
+      <br>
+    </div>
+    <div class="col-md-12">
+      <a [routerLink]="[ '/telphone' ]" class="nav-link" routerLinkActive="active">
+        <i class="fas fa-phone"></i>
+        <p class="title-icons">Telefone</p>
+      </a>
+    </div>
+    <div class="col-md-12">
+      <a [routerLink]="[ '/agents' ]" class="nav-link" routerLinkActive="active">
+        <i class="fas fa-users"></i>
+        <p class="title-icons">Equipe</p>
+      </a>
+    </div>
+    <div class="col-md-12">
+      <a [routerLink]="[ '/visitors' ]" class="nav-link" routerLinkActive="active">
+        <i class="fas fa-binoculars"></i>
+        <p class="title-icons">Visitantes</p>
+      </a>
+    </div>
+    <div class="col-md-12">
+      <a [routerLink]="[ '/billing' ]" class="nav-link" routerLinkActive="active">
+        <i class="fas fa-crown"></i>
+        <p class="title-icons">PRO</p>
+      </a>
+    </div>
+    <div class="col-md-12">
+      <i class="fas fa-sliders-h"></i>
+      <p class="title-icons">Configurações</p>
+    </div>
+  </div>
+</aside>

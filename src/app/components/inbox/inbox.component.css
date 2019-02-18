@@ -1,0 +1,17 @@
+.list-conversas {
+  height: 100vh;
+}
+
+.list-conversas {
+  animation: anime 0.2s ease-in;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
