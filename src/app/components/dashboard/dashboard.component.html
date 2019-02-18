@@ -5,7 +5,7 @@
         <h5 class="h5 text-center">
           Conversas
         </h5>
-        <div class="list-group list-group-flush" *ngFor="let item of users.users" (click)="getIdUser(item.uid)">
+        <div class="list-group list-group-flush" *ngFor="let item of users" (click)="getIdUser(item.uid)">
           <a class="list-group-item list-group-item-action " style="cursor: pointer;">
             <div class="d-flex w-100 justify-content-between">
               <img src="{{item.photo}}" alt="" srcset="" class="rounded-image" width="32" height="32">
@@ -18,19 +18,15 @@
       <div class="col-md-9 bg-light">
         <div class="container-fluid">
           <br>
-          <div class="container row" *ngFor="let tt of users.users" [hidden]="tt.uid != idSelect">
+          <div class="container row" *ngFor="let tt of users" [hidden]="tt.uid != idSelect">
             <img src="{{tt.photo}}" class="rounded-image" width="42" height="42" alt="" srcset="">
             &nbsp;&nbsp;&nbsp;
             <p class="lead">{{tt.name}}</p>
           </div>
           <hr class="bg-seconary col-12">
           <div class="container bg-light">
-            <div class="card card-body col-md-3" *ngFor="let i of users.chat" [hidden]="i.id != idSelect" style="margin-top: 10px">
+            <div class="card card-body col-md-3" *ngFor="let i of chat" [hidden]="i.id != idSelect" style="margin-top: 10px">
               <p class="card-text">{{i.mensage}}</p>
-            </div>
-            <div class="card card-body bg-secondary text-light col-md-3" *ngFor="let j of person" [hidden]="j.id != idSelect"
-              style="margin-top: 10px">
-              <p class="card-text">{{j.mensage}}</p>
             </div>
           </div>
           <div class="container-fluid bg-light footer">
